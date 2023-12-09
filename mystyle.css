@@ -2,3 +2,7 @@ body {background-color: powderblue;}
 h1   {font-family: Ariel, Helvetica, sans-serif; font-size:2.5em; color: black;}
 p    {font-family: Ariel, Helvetica, sans-serif; font-size:1.875em; color: black;}
 p1   {font-family: Ariel, Helvetica, sans-serif; font-size:0.875em; color: black;}
+a:link      {color: skyblue;}
+a:visited   {color: prussianblue}
+a:hover     {color: bondiblue}
+a:active    {color: darkslateblue}
