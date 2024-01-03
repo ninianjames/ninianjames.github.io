@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <title>Ninian's Website</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="Atkinson-Hyperlegible-Regular-102.otf">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
@@ -26,6 +27,32 @@
     <p1>I'm hosted with GitHub Pages!</p1>
 
 </div>
+
+<footer>
+    <div id="sike" hidden>
+        <a id="index"></a>
+        <a id="prev">(←) </a>
+        <a id="next">(→) </a>
+    </div>
+</footer>
+
+<script>
+const elements = ["index", "prev", "next"];
+const sike = document.getElementById("sike");
+
+fetch("[tbc]")
+	.then(res => res.json())
+	.then((out => {
+		sike.hidden = false;
+		elements.forEach((element) => {
+			var a = document.getElementById(element);
+			var link = document = document.createTextNode(out[element]["title"]);
+			a.appendChild(link);
+			a.href += out[element]["title"];
+			sike.appendChild(a);
+		});
+	});
+</script>
 
 </body>
 </html>
