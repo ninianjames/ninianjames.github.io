@@ -13,7 +13,7 @@ html[data-theme=light] {
   --colour-link: #2aa198;
   --colour-draw: var(--colour-text);
   --draw-width: 1px;
-  --colour-headings: #268bd2;
+  --colour-headings: #3d3212;
 }
 
 html[data-theme=dark] {
