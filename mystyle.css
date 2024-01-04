@@ -8,7 +8,7 @@
 html[data-theme=default],
 html[data-theme=light] {
   --colour-bg: #fdf6e3;
-  --colour-text: #657b83;
+  --colour-text: #6e6756;
   --colour-emphasis: #586e75;
   --colour-link: #d18108;
   --colour-draw: var(--colour-text);
