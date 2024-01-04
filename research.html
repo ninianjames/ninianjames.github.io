@@ -14,5 +14,33 @@
 
 <object type="image/svg+xml" data="netlocationsfirstlook.svg"></object>
 
+<footer>
+    <div id="sike" hidden>
+        <a id="index"></a>
+        <a id="prev">(←) </a>
+        <a id="next">(→) </a>
+    </div>
+    <p1>I'm hosted with GitHub Pages!</p1>
+</footer>
+
+<script>
+const elements = ["index", "prev", "next"];
+const sike = document.getElementById("sike");
+
+fetch("[tbc]")
+	.then(res => res.json())
+	.then((out => {
+		sike.hidden = false;
+		elements.forEach((element) => {
+			var a = document.getElementById(element);
+			var link = document = document.createTextNode(out[element]["title"]);
+			a.appendChild(link);
+			a.href += out[element]["title"];
+			sike.appendChild(a);
+		});
+	});
+</script>
+
+
 </body>
 </html>
