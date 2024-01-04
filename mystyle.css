@@ -20,7 +20,7 @@ html[data-theme=dark] {
   --colour-bg: #002b36;
   --colour-text: #839496;
   --colour-emphasis: #93a1a1;
-  --colour-link: #2aa198;
+  --colour-link: #d18108;
   --colour-draw: var(--colour-text);
   --draw-width: 1px;
   --colour-headings: #268bd2;
