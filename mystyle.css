@@ -12,7 +12,7 @@ html[data-theme=light] {
   --colour-emphasis: #6e6756;
   --colour-link: #d18108;
   --colour-draw: var(--colour-text);
-  --draw-width: 3px;
+  --draw-width: 1px;
   --colour-headings: #614b0f;
 }
 
